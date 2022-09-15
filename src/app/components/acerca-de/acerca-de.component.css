@@ -6,14 +6,27 @@ div{
     text-align: center;
 }
 /*estilo foto Perfil*/
-@media(min-width:576px){
+@media (min-width:576px){
     #fotoperfil{
         position: absolute;
         width: 15%;
         border-radius: 100%;
         box-shadow: 3px 3px 3px gray;
+        left: 3%;
+        top: 600px;
+        padding: 20px;
     }
-}
+    }
+@media (max-width:575px){
+    #fotoperfil{
+            position: absolute;
+            width: 15%;
+            border-radius: 100%;
+            box-shadow: 3px 3px 3px gray;
+            left: 42%;
+            top: 630px;
+        }
+}    
 /* etiqueta Nombre*/
 #nombre{
     font-weight: bold;
