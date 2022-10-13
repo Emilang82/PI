@@ -1,4 +1,4 @@
-package com.porfolio.Emi;
+package com.porfolio.emi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
