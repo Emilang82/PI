@@ -10,20 +10,25 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity 
+@Entity
 public class Experiencia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombreE;
-    private String descripcionE; 
+    private String descripcionE;
+
+    //Constructores
 
     public Experiencia() {
     }
 
     public Experiencia(String nombreE, String descripcionE) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.nombreE = nombreE;
+        this.descripcionE = descripcionE;
     }
+
+    //Getters and setters
 
     public int getId() {
         return id;
@@ -49,7 +54,4 @@ public class Experiencia {
         this.descripcionE = descripcionE;
     }
 
-    
-    
-    
 }
